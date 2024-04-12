@@ -1,16 +1,10 @@
 import React, { Fragment, useEffect, useState } from "react";
 
+import EditToDo from "./EditTodo";
+
 const ListToDos = () => {
 
-    const [ todos, setTodos ] = useState([]);
-
-    const editTodo = async (id) => {
-        try {
-            
-        } catch (error) {
-            console.error(error.message);
-        }
-    }
+    const [ todos, setTodos ] = useState([]);    
 
     const deleteTodo = async (id) => {
         try {
@@ -55,11 +49,7 @@ const ListToDos = () => {
                                 <th scope="row">{todo.todo_id}</th>
                                 <td>{todo.description}</td>
                                 <td>
-                                    <button 
-                                        className="btn btn-warning" 
-                                        onClick={() => editTodo(todo.todo_id)}>
-                                            Edit
-                                    </button>
+                                    <EditToDo todo={todo}/>
                                 </td>
                                 <td>
                                     <button 
