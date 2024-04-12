@@ -7,6 +7,8 @@ Basic CRUD app in Postgres Express React Node stack
 
 to run: 
 cd pernTodo/server
+
+
 nodemon index
 
 
@@ -21,24 +23,26 @@ control + c
 - - - 
 
 
-postgres 
+postgres: 
 cd Library/PostgreSQL/16/bin
+
+
 psql -U postgres
 
 
-List of databases
+List of databases:
 \l
 
 
-Connect to DB
+Connect to DB:
 \c DBNameHere
 
 
-Exit
+Exit:
 quit
 
 
-List all Tables in DB
+List all Tables in DB:
 \dt
 
 
